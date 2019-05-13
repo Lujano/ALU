@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Mon May 13 02:21:30 2019
+Mon May 13 02:25:52 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -50,7 +50,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 13 02:21:30 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon May 13 02:25:52 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
@@ -344,7 +344,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon May 13 02:21:21 2019
+    Info: Processing started: Mon May 13 02:25:44 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file driver_display.vhd
@@ -386,9 +386,9 @@ Info (21057): Implemented 57 device resources after synthesis - the final resour
     Info (21059): Implemented 13 output pins
     Info (21061): Implemented 39 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 629 megabytes
-    Info: Processing ended: Mon May 13 02:21:30 2019
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 641 megabytes
+    Info: Processing ended: Mon May 13 02:25:52 2019
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 
 

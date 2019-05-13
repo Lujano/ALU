@@ -79,4 +79,5 @@ set_global_assignment -name VHDL_FILE disp_mux.vhd
 set_global_assignment -name VHDL_FILE hex_to_sseg.vhd
 set_global_assignment -name VHDL_FILE ALU.vhd
 set_global_assignment -name VHDL_FILE ALU_unit.vhd
+set_location_assignment PIN_84 -to carryout
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
