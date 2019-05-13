@@ -1,5 +1,5 @@
 Assembler report for ALU
-Sun May 12 22:05:32 2019
+Mon May 13 00:09:49 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: ALU.sof
+  5. Assembler Device Options: C:/Users/Server technology/Documents/GitHub/ALU/output_files/ALU.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun May 12 22:05:32 2019 ;
+; Assembler Status      ; Successful - Mon May 13 00:09:49 2019 ;
 ; Revision Name         ; ALU                                   ;
 ; Top-level Entity Name ; ALU                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------+
-; Assembler Generated Files ;
-+---------------------------+
-; File Name                 ;
-+---------------------------+
-; ALU.sof                   ;
-+---------------------------+
++----------------------------------------------------------------------+
+; Assembler Generated Files                                            ;
++----------------------------------------------------------------------+
+; File Name                                                            ;
++----------------------------------------------------------------------+
+; C:/Users/Server technology/Documents/GitHub/ALU/output_files/ALU.sof ;
++----------------------------------------------------------------------+
 
 
-+-----------------------------------+
-; Assembler Device Options: ALU.sof ;
-+----------------+------------------+
-; Option         ; Setting          ;
-+----------------+------------------+
-; Device         ; EP4CE6E22C8      ;
-; JTAG usercode  ; 0x0009D9AA       ;
-; Checksum       ; 0x0009D9AA       ;
-+----------------+------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Server technology/Documents/GitHub/ALU/output_files/ALU.sof ;
++----------------+-------------------------------------------------------------------------------+
+; Option         ; Setting                                                                       ;
++----------------+-------------------------------------------------------------------------------+
+; Device         ; EP4CE6E22C8                                                                   ;
+; JTAG usercode  ; 0x00095DB9                                                                    ;
+; Checksum       ; 0x00095DB9                                                                    ;
++----------------+-------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun May 12 22:05:28 2019
+    Info: Processing started: Mon May 13 00:09:46 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ALU -c ALU
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 526 megabytes
-    Info: Processing ended: Sun May 12 22:05:32 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 404 megabytes
+    Info: Processing ended: Mon May 13 00:09:49 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

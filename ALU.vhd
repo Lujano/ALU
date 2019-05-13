@@ -16,22 +16,25 @@ entity ALU is -- Multiplexacion por tiempo de 7 segmentos
 architecture arch of ALU is
 	signal inc: std_logic_vector (7 downto 0) ;
 	signal led3, led2, led1, led0: std_logic_vector (7 downto 0) ;
+	signal an_negado: std_logic_vector(3 downto 0);
 begin
 	-- incrementar entrada
 	inc <= std_logic_vector(unsigned(sw)+1);
 	-- instanciar cuatro instancias de hex-decoders
 	-- instanciar para cuatro LSBs de las entradas
+	
+	-- el formato del decoder es punto abcdefg
 	sseg_unit_0: entity work.hex_to_sseg
 		port map(
-			hex => sw(3 downto 0) ,
+			hex => "0001" ,
 			dp  => '0',
-			sseg => led0
+			sseg => led0 -- Primer led izquierda a derecha
 		);
 	
 	-- instanciar 4 MSBs de la entrada
 	sseg_unit_1: entity work.hex_to_sseg
 		port map(
-			hex => sw(7 downto 4) ,
+			hex => "0010" ,
 			dp  => '0',
 			sseg => led1
 		);
@@ -40,7 +43,7 @@ begin
 	-- instanciar 4 LSBs de la entrada incrementada
 	sseg_unit_3: entity work.hex_to_sseg
 		port map(
-			hex => inc(3 downto 0) ,
+			hex => "0100" ,
 			dp  => '0',
 			sseg => led2
 		);
@@ -48,8 +51,8 @@ begin
 	-- instanciar 4 MSBs de la entrada incrementada
 	sseg_unit_4: entity work.hex_to_sseg
 		port map(
-			hex => inc(7 downto 4) ,
-			dp  => '0',
+			hex => "1000" ,
+			dp  => '0', -- punto desactivado, 1 para activar
 			sseg => led3
 			);
 	
@@ -59,13 +62,15 @@ begin
 		port map(
 			clk=>clk,
 			rst=>'0',
-			in0=>led0,
-			in1=>led1,
-			in2=>led2,
-			in3=>led3,
-			en=>an,
+			in0=>led3,
+			in1=>led2,
+			in2=>led1,
+			in3=>led0, -- primer led de izquierda a derecha
+			en=> an_negado,
 			sseg=>sseg
 		);
+	
+	an<= not an_negado;
 	
 end arch;
 	

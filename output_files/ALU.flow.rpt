@@ -1,5 +1,5 @@
 Flow report for ALU
-Sun May 12 22:05:44 2019
+Mon May 13 00:09:57 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun May 12 22:05:32 2019           ;
+; Flow Status                        ; Successful - Mon May 13 00:09:49 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE6E22C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 72 / 6,272 ( 1 % )                              ;
-;     Total combinational functions  ; 72 / 6,272 ( 1 % )                              ;
+; Total logic elements               ; 22 / 6,272 ( < 1 % )                            ;
+;     Total combinational functions  ; 22 / 6,272 ( < 1 % )                            ;
 ;     Dedicated logic registers      ; 18 / 6,272 ( < 1 % )                            ;
 ; Total registers                    ; 18                                              ;
 ; Total pins                         ; 21 / 92 ( 23 % )                                ;
@@ -64,29 +64,29 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2019 22:04:49 ;
+; Start date & time ; 05/13/2019 00:09:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                       ;
-+-------------------------------------+-----------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                 ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+-----------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 0.155771308803285     ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                    ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                     ; --            ; --          ; --         ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing     ; --            ; --          ; --         ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing     ; --            ; --          ; --         ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio            ; --            ; --          ; --         ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio            ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057              ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                ; --            ; --          ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files          ; --            ; --          ; --         ;
-+-------------------------------------+-----------------------+---------------+-------------+------------+
++---------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                              ;
++-------------------------------------+------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 143309858252.155772056200952 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing            ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing            ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                   ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                   ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --            ; --          ; --         ;
++-------------------------------------+------------------------------+---------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,24 +94,24 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 589 MB              ; 00:00:06                           ;
-; Fitter                    ; 00:00:19     ; 1.0                     ; 744 MB              ; 00:00:16                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 526 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 550 MB              ; 00:00:06                           ;
-; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 475 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 679 MB              ; 00:00:12                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 404 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 454 MB              ; 00:00:05                           ;
+; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:24                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                             ;
-+---------------------------+------------------+----------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
-+---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; lujano-VIT-P2402 ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; Fitter                    ; lujano-VIT-P2402 ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; Assembler                 ; lujano-VIT-P2402 ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; TimeQuest Timing Analyzer ; lujano-VIT-P2402 ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-+---------------------------+------------------+----------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Technology       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Technology       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Technology       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Technology       ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
