@@ -17,6 +17,7 @@ architecture arch of ALU is
 begin
 	
 	sseg <= "10000011";
+	an <= "0011";
 end arch;
 
 	
