@@ -45,6 +45,6 @@ begin
 			"0110000" when "1110",
 			"0111000" when others;
 
-	sseg(7) <= not dp;-- logica negada, 0 activa el punto
+	sseg(7) <= not dp;
 
 end architecture ; -- arch
