@@ -14,61 +14,13 @@ entity ALU is -- Multiplexacion por tiempo de 7 segmentos
 	
 	
 architecture arch of ALU is
-	signal inc: std_logic_vector (7 downto 0) ;
-	signal led3, led2, led1, led0: std_logic_vector (7 downto 0) ;
 begin
-	-- incrementar entrada
-	inc <= std_logic_vector(unsigned(sw)+1);
-	-- instanciar cuatro instancias de hex-decoders
-	-- instanciar para cuatro LSBs de las entradas
-	sseg_unit_0: entity work.hex_to_sseg
-		port map(
-			hex => sw(3 downto 0) ,
-			dp  => '0',
-			sseg => led0
-		);
 	
-	-- instanciar 4 MSBs de la entrada
-	sseg_unit_1: entity work.hex_to_sseg
-		port map(
-			hex => sw(7 downto 4) ,
-			dp  => '0',
-			sseg => led1
-		);
-	
-	
-	-- instanciar 4 LSBs de la entrada incrementada
-	sseg_unit_3: entity work.hex_to_sseg
-		port map(
-			hex => inc(3 downto 0) ,
-			dp  => '1',
-			sseg => led2
-		);
-	
-	-- instanciar 4 MSBs de la entrada incrementada
-	sseg_unit_4: entity work.hex_to_sseg
-		port map(
-			hex => inc(7 downto 4) ,
-			dp  => '1',
-			sseg => led3
-			);
-	
-	-- instanciar el  7-seg LED display multiplexor de tiempo
-	
-	disp_unit: entity work.disp_mux
-		port map(
-			clk=>clk,
-			rst=>'0',
-			in0=>led0,
-			in1=>led1,
-			in2=>led2,
-			in3=>led3,
-			en=>an,
-			sseg=>sseg
-		);
-	
+	sseg <= "10000011";
 end arch;
+
 	
+
 	
 	
 	
